@@ -1,0 +1,25 @@
+<h1 mat-dialog-title>{{ data ? 'Редактирование' : 'Добавление студента' }}</h1>
+
+<div mat-dialog-content>
+
+  <mat-form-field appearance="fill" class="full-width">
+    <mat-label>ФИО</mat-label>
+    <input matInput [(ngModel)]="editingStudent.fio" required>
+  </mat-form-field>
+
+  <mat-form-field appearance="fill" class="full-width">
+    <mat-label>ID Группы (1 - ИСП, 2 - СЗС...)</mat-label>
+    <input matInput type="number" [(ngModel)]="editingStudent.group.id" required>
+  </mat-form-field>
+
+  <mat-form-field appearance="fill" class="full-width">
+    <mat-label>Телефон</mat-label>
+    <input matInput [(ngModel)]="editingStudent.phoneNumber" required>
+  </mat-form-field>
+
+</div>
+
+<div mat-dialog-actions align="end">
+  <button mat-button (click)="onNoClick()">Отмена</button>
+  <button mat-raised-button color="primary" [mat-dialog-close]="editingStudent">ОК</button>
+</div>

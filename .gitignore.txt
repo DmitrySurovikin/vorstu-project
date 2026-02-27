@@ -1,0 +1,17 @@
+# --- Настройки IDE ---
+.idea/
+*.iml
+.vscode/
+.DS_Store
+
+# --- Бэкенд (Java) ---
+backend/target/
+backend/build/
+backend/out/
+backend/.gradle/
+
+# --- Фронтенд (Node.js) ---
+frontend/node_modules/
+frontend/dist/
+frontend/.angular/
+frontend/.angular/cache/

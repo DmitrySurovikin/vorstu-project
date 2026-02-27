@@ -1,0 +1,58 @@
+
+.content-container {
+  width: 95%;        // Можно поставить 95% или 100%
+  max-width: 100%;   // Убираем жесткие ограничения типа 1200px, если они мешают
+  margin: 0 auto;    // Центрируем
+  padding: 20px;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.table-container {
+  position: relative;
+}
+
+.mat-column-id {
+  width: 100px;
+  padding-left: 24px !important;
+}
+
+.mat-column-fio, .mat-column-group, .mat-column-phoneNumber {
+  padding-right: 16px;
+}
+
+.mat-column-actions {
+  width: 230px;
+  .mat-cell {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+}
+
+th.mat-header-cell {
+    font-size: 14px;
+    font-weight: 500;
+}
+
+
+.loading-shade {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.15);
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+table {
+  width: 100%;
+}

@@ -1,0 +1,14 @@
+.sidenav-container {
+  height: calc(100vh - 64px); // 100% высоты экрана минус высота Toolbar
+}
+
+mat-sidenav {
+  width: 250px;
+   border-right: 1px solid rgba(0, 0, 0, 0.12);
+}
+
+mat-sidenav-content {
+  display: flex;
+  flex-direction: column;
+  // Это поможет растянуть таблицу внутри, если она использует flex
+}

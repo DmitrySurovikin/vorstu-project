@@ -1,0 +1,27 @@
+.content-container {
+  width: 95%;
+  margin: 0 auto;
+  padding: 20px 0;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+}
+
+.mat-column-id {
+  width: 5%;
+  padding-left: 20px !important;
+}
+
+.mat-column-fio {
+  width: 60%;
+}
+
+.mat-column-actions {
+  width: 35%;
+  text-align: right;
+  padding-right: 20px !important;
+}

@@ -1,0 +1,17 @@
+<div class="login-container">
+  <h2>Вход в систему</h2>
+
+  <mat-form-field appearance="fill">
+    <mat-label>Логин</mat-label>
+    <input matInput [(ngModel)]="username">
+  </mat-form-field>
+  <br>
+  <mat-form-field appearance="fill">
+    <mat-label>Пароль</mat-label>
+    <input matInput type="password" [(ngModel)]="password">
+  </mat-form-field>
+  <br>
+  <button mat-raised-button color="primary" (click)="login()">Войти</button>
+
+  <p *ngIf="error" style="color: red">{{ error }}</p>
+</div>
